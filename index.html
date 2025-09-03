@@ -10,16 +10,66 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+      .hind-madurai-regular {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .hind-madurai-semibold {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      .hind-madurai-bold {
+        font-family: "Hind Madurai", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+
+      .inter-black {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+      }
+      .inter-medium {
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body>
+  <body class="hind-madurai-bold">
     <header>
-      
+      <nav class="flex justify-between items-center px-14 py-6">
+        <div class="flex gap-3">
+          <img class="w-12 h-12" src="assets/logo.png" alt="" />
+          <h1 class="text-[#006747] text-2xl/6.5 font-extrabold">
+            Emergency <br />
+            Service
+          </h1>
+        </div>
+        <div class="flex gap-5">
+          <button class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-9 py-4">
+            <span class="inter-black">0</span> <img class="w-7 h-7 ml-2" src="assets/heart.png" alt="" />
+          </button>
+          <button class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-9 py-4">
+            <span class="inter-black">100</span> <img class="w-6 h-6 ml-2" src="assets/coin.png" alt="">
+          </button>
+          <button
+            class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-9 py-4"
+          >
+            <span class="inter-medium">2 Copy</span>
+          </button>
+        </div>
+      </nav>
     </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
+    <main></main>
+    <footer></footer>
   </body>
 </html>
