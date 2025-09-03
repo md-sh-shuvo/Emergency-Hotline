@@ -10,7 +10,7 @@ document.body.addEventListener('click', (e)=>{
 
 
         if(coin > 0){
-            const parent = e.target.parentElement.parentElement; 
+            const parent = e.target.closest('.card'); 
             const service = parent.querySelector('.services');
             const number = parent.querySelector('.number')
             alert('📞 Calling ' + service.innerText +' ' + number.innerText +'...');
@@ -51,6 +51,18 @@ document.body.addEventListener('click', (e)=>{
     if(e.target.matches('.heart')){
         count++;
         document.getElementById('fav-count').innerText = count;
+
+    }
+
+    //copy button
+    let copyCount = parseInt(document.getElementById('copy-count').innerText)
+    if(e.target.matches('.btn-cpy')){
+        const parent = e.target.closest('.card')
+        const number = parent.querySelector('.number').innerText
+        navigator.clipboard.writeText(number);
+        alert('নম্বর কপি হয়েছে : '+number);
+        copyCount++;
+        document.getElementById('copy-count').innerText = copyCount
 
     }
 })
