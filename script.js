@@ -1,8 +1,9 @@
 
 
 
-// call button
 document.body.addEventListener('click', (e)=>{
+    
+    // call button
     if(e.target.matches('.btn-call')){
         // alert(e.target.innerText, ' is clicked')
         let coin = document.getElementById('coin').innerText;
@@ -44,6 +45,14 @@ document.body.addEventListener('click', (e)=>{
 
 
     }
+
+    //heart button
+    let count = document.getElementById('fav-count').innerText
+    if(e.target.matches('.heart')){
+        count++;
+        document.getElementById('fav-count').innerText = count;
+
+    }
 })
 
 
@@ -53,3 +62,9 @@ document.getElementById('clear').addEventListener('click', ()=>{
         history.remove();
     }
 })
+
+
+// document.querySelectorAll('.heart').forEach((hbtn) => {
+//     hbtn.addEventListener('click', ()=>{
+//     })
+// })

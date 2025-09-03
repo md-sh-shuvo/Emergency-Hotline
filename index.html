@@ -81,7 +81,7 @@
           <button
             class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-9 py-4"
           >
-            <span class="inter-black">0</span>
+            <span class="inter-blac" id="fav-count">0</span>
             <img class="w-7 h-7 ml-2" src="assets/heart.png" alt="" />
           </button>
           <button
@@ -112,13 +112,9 @@
     <main class="bg-[#F5FFF6] pt-12 px-14 pb-20">
       <section class="grid grid-cols-4 gap-7">
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/emergency.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +122,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -135,8 +132,12 @@
               />
             </svg>
           </div>
-          <h1 class="service-name hind-madurai-bold text-2xl">জাতীয় জরুরি সেবা</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">National Emergency</p>
+          <h1 class="service-name hind-madurai-bold text-2xl">
+            জাতীয় জরুরি সেবা
+          </h1>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            National Emergency
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
@@ -160,13 +161,9 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/police.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/police.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +171,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -208,7 +206,7 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img
                 class="w-8 h-8 m-auto"
@@ -222,7 +220,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -231,8 +230,12 @@
               />
             </svg>
           </div>
-          <h1 class="service-name hind-madurai-bold text-2xl">ফায়ার সার্ভিস</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Fire Service</p>
+          <h1 class="service-name hind-madurai-bold text-2xl">
+            ফায়ার সার্ভিস
+          </h1>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            Fire Service
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
@@ -257,7 +260,10 @@
         </div>
 
         <!-- Call History -->
-        <div class="card bg-white p-6 row-span-3 drop-shadow-xl/15" id="call-history-container">
+        <div
+          class="card bg-white p-6 row-span-3 drop-shadow-xl/15"
+          id="call-history-container"
+        >
           <div class="flex justify-between items-center">
             <div class="flex gap-2">
               <img class="w-6 h-6" src="assets/Call-History.svg" alt="" />
@@ -265,7 +271,8 @@
             </div>
             <button
               class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-9 py-4"
-            id="clear">
+              id="clear"
+            >
               <span class="inter-medium">Clear</span>
             </button>
           </div>
@@ -274,15 +281,11 @@
             <!-- call history div -->
           </div>
         </div>
-        
+
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/ambulance.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/ambulance.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -290,7 +293,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -325,13 +329,9 @@
         </div>
 
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/emergency.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -339,7 +339,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -348,8 +349,12 @@
               />
             </svg>
           </div>
-          <h1 class="service-name hind-madurai-bold text-2xl">নারী ও শিশু সহায়তা</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Women & Child Helpline</p>
+          <h1 class="service-name hind-madurai-bold text-2xl">
+            নারী ও শিশু সহায়তা
+          </h1>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            Women & Child Helpline
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">109</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
@@ -373,13 +378,9 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/emergency.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -387,7 +388,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -397,7 +399,9 @@
             </svg>
           </div>
           <h1 class="service-name hind-madurai-bold text-2xl">দুদক</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Anti-Corruption</p>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            Anti-Corruption
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">106</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
@@ -421,13 +425,9 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/emergency.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -435,7 +435,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -444,8 +445,12 @@
               />
             </svg>
           </div>
-          <h1 class="service-name hind-madurai-bold text-2xl">বিদ্যুৎ বিভ্রাট</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Electricity Outage</p>
+          <h1 class="service-name hind-madurai-bold text-2xl">
+            বিদ্যুৎ বিভ্রাট
+          </h1>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            Electricity Outage
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">16216</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
@@ -469,13 +474,9 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
-              <img
-                class="w-8 h-8 m-auto"
-                src="assets/brac.png"
-                alt=""
-              />
+              <img class="w-8 h-8 m-auto" src="assets/brac.png" alt="" />
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -483,7 +484,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -492,7 +494,7 @@
               />
             </svg>
           </div>
-          <h1 class=" service-name hind-madurai-bold text-2xl">ব্র্যাক</h1>
+          <h1 class="service-name hind-madurai-bold text-2xl">ব্র্যাক</h1>
           <p class="services text-gray-600 roboto-normal text-xl">Brac</p>
           <p class="number roboto-bold text-[32px] mt-6">16445</p>
           <p
@@ -517,7 +519,7 @@
           </div>
         </div>
         <div class="card bg-white p-8 drop-shadow-xl/15">
-          <div class="flex justify-between mb-4">
+          <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img
                 class="w-8 h-8 m-auto"
@@ -531,7 +533,8 @@
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              class="size-6"
+              class="size-6 heart"
+              style="cursor: pointer"
             >
               <path
                 stroke-linecap="round"
@@ -540,8 +543,12 @@
               />
             </svg>
           </div>
-          <h1 class="service-name hind-madurai-bold text-2xl">বাংলাদেশ রেলওয়ে</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Bangladesh Railway</p>
+          <h1 class="service-name hind-madurai-bold text-2xl">
+            বাংলাদেশ রেলওয়ে
+          </h1>
+          <p class="services text-gray-600 roboto-normal text-xl">
+            Bangladesh Railway
+          </p>
           <p class="number roboto-bold text-[32px] mt-6">163</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
