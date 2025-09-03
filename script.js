@@ -1,5 +1,7 @@
 
 
+
+// call button
 document.body.addEventListener('click', (e)=>{
     if(e.target.matches('.btn-call')){
         // alert(e.target.innerText, ' is clicked')
@@ -31,6 +33,7 @@ document.body.addEventListener('click', (e)=>{
                   <div class="hind-madurai-regular">${time}</div>
                 </div>
             `
+            div.classList.add('histories')
             document.getElementById('call-history-container').appendChild(div);
             coin-=20;
             document.getElementById('coin').innerText = coin;
@@ -40,5 +43,13 @@ document.body.addEventListener('click', (e)=>{
         }
 
 
+    }
+})
+
+
+// clear history button
+document.getElementById('clear').addEventListener('click', ()=>{
+    for(let history of document.querySelectorAll(".histories")){
+        history.remove();
     }
 })
