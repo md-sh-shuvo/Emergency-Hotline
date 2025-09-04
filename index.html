@@ -69,49 +69,56 @@
   </head>
   <body class="hind-madurai-bold">
     <header>
-      <nav class="flex justify-between items-center px-14 py-6">
+      <nav class="flex justify-between items-center px-3 sm:px-14 py-6">
         <div class="flex gap-3">
           <img class="w-12 h-12" src="assets/logo.png" alt="" />
-          <h1 class="text-[#006747] text-2xl/6.5 font-extrabold">
+          <h1
+            class="text-[#006747] text-[18px]/6 sm:text-2xl/6.5 font-extrabold"
+          >
             Emergency <br />
             Service
           </h1>
         </div>
-        <div class="flex gap-5">
+        <div class="flex justify-between gap-2 sm:gap-5">
           <button
-            class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-9 py-4"
+            class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-3 sm:px-9 py-8 sm:py-4 flex flex-col gap-0 sm:flex-row"
           >
-            <span class="inter-blac" id="fav-count">0</span>
-            <img class="w-7 h-7 ml-2" src="assets/heart.png" alt="" />
+            <span class="inter-black" id="fav-count">0</span>
+            <img class="w-7 h-7 sm:ml-2" src="assets/heart.png" alt="" />
           </button>
           <button
-            class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-9 py-4"
+            class="btn btn-lg rounded-full bg-[#EDFFF1] border-none px-3 sm:px-9 py-8 sm:py-4 flex flex-col gap-0 sm:flex-row"
           >
             <span class="inter-black" id="coin">100</span>
-            <img class="w-6 h-6 ml-2" src="assets/coin.png" alt="" />
+            <img class="w-6 h-6 sm:ml-2" src="assets/coin.png" alt="" />
           </button>
           <button
-            class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-9 py-4"
+            class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-3 sm:px-9 py-8 sm:py-4 flex flex-col gap-0 sm:gap-2 sm:flex-row"
           >
-            <span class="inter-medium" id="copy-count">0</span><span class="inter-medium"> Copy</span>
+            <span class="inter-medium" id="copy-count">0</span
+            ><span class="inter-medium text-[14px] sm:text-[18px]">Copy</span>
           </button>
         </div>
       </nav>
 
       <section
-        class="bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] text-white font-semibold text-center p-3 flex flex-col gap-3"
+        class="bg-linear-to-r from-[#013223] via-[#006747] to-[#013223] text-white font-semibold text-center p-5 sm:p-3 flex flex-col gap-3"
       >
-        <img class="mx-auto w-24 h-24" src="assets/logo-dark.png" alt="" />
-        <h1 class="text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
-        <p class="text-[20px]">
+        <img
+          class="mx-auto w-20 h-20 sm:w-24 sm:h-24"
+          src="assets/logo-dark.png"
+          alt=""
+        />
+        <h1 class="text-[25px] sm:text-[40px]">জরুরি সেবা ডিরেক্টরি</h1>
+        <p class="text-sm sm:text-[20px]">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
       </section>
     </header>
-    <main class="bg-[#F5FFF6] pt-12 px-14 pb-20">
-      <section class="grid grid-cols-4 gap-7">
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+    <main class="bg-[#F5FFF6] pt-12 px-4 sm:px-14 pb-20">
+      <section class="grid grid-cols-2 sm:grid-cols-4 gap-7">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
@@ -135,17 +142,17 @@
           <h1 class="service-name hind-madurai-bold text-2xl">
             জাতীয় জরুরি সেবা
           </h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             National Emergency
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">999</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">সার্বজনীন</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -160,7 +167,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/police.png" alt="" />
@@ -182,15 +189,15 @@
             </svg>
           </div>
           <h1 class="service-name hind-madurai-bold text-2xl">পুলিশ</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Police</p>
-          <p class="number roboto-bold text-[32px] mt-6">999</p>
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">Police</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">পুলিশ</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -205,7 +212,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img
@@ -233,17 +240,17 @@
           <h1 class="service-name hind-madurai-bold text-2xl">
             ফায়ার সার্ভিস
           </h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             Fire Service
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">999</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">ফায়ার</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -261,16 +268,16 @@
 
         <!-- Call History -->
         <div
-          class="card bg-white p-6 row-span-3 drop-shadow-xl/15"
+          class="card bg-white p-2 sm:p-6 row-start-1 col-start-2 sm:row-start-1 sm:col-start-4 row-span-2 sm:row-span-3 drop-shadow-xl/15"
           id="call-history-container"
         >
-          <div class="flex justify-between items-center">
-            <div class="flex gap-2">
+          <div class="sm:flex justify-between items-center text-center">
+            <div class="flex gap-2 justify-center">
               <img class="w-6 h-6" src="assets/Call-History.svg" alt="" />
               <h1 class="roboto-medium text-xl">Call History</h1>
             </div>
             <button
-              class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-9 py-4"
+              class="btn btn-lg rounded-full bg-[#00A63E] text-white border-none px-9 py-4 mt-2 sm:mt-0"
               id="clear"
             >
               <span class="inter-medium">Clear</span>
@@ -282,7 +289,7 @@
           </div>
         </div>
 
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/ambulance.png" alt="" />
@@ -304,15 +311,15 @@
             </svg>
           </div>
           <h1 class="service-name hind-madurai-bold text-2xl">অ্যাম্বুলেন্স</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Ambulance</p>
-          <p class="number roboto-bold text-[32px] mt-6">1994-999999</p>
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">Ambulance</p>
+          <p class="number roboto-bold text-[32px]/9 mt-2 sm:mt-6">1994-999999</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">স্বাস্থ্য</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -328,7 +335,7 @@
           </div>
         </div>
 
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
@@ -352,17 +359,17 @@
           <h1 class="service-name hind-madurai-bold text-2xl">
             নারী ও শিশু সহায়তা
           </h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             Women & Child Helpline
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">109</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">109</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">সহায়তা</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -377,7 +384,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
@@ -399,17 +406,17 @@
             </svg>
           </div>
           <h1 class="service-name hind-madurai-bold text-2xl">দুদক</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             Anti-Corruption
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">106</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">106</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">বিদ্যুৎ</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -424,7 +431,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/emergency.png" alt="" />
@@ -448,17 +455,17 @@
           <h1 class="service-name hind-madurai-bold text-2xl">
             বিদ্যুৎ বিভ্রাট
           </h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             Electricity Outage
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">16216</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">16216</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">বিদ্যুৎ</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -473,7 +480,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img class="w-8 h-8 m-auto" src="assets/brac.png" alt="" />
@@ -495,15 +502,15 @@
             </svg>
           </div>
           <h1 class="service-name hind-madurai-bold text-2xl">ব্র্যাক</h1>
-          <p class="services text-gray-600 roboto-normal text-xl">Brac</p>
-          <p class="number roboto-bold text-[32px] mt-6">16445</p>
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">Brac</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">16445</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">এনজিও</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >
@@ -518,7 +525,7 @@
             </button>
           </div>
         </div>
-        <div class="card bg-white p-8 drop-shadow-xl/15">
+        <div class="card bg-white p-4 sm:p-8 drop-shadow-xl/15 flex flex-col justify-between">
           <div class="flex justify-between items-center mb-4">
             <div class="w-14 h-14 bg-[#FFE3E2] rounded-xl flex">
               <img
@@ -546,17 +553,17 @@
           <h1 class="service-name hind-madurai-bold text-2xl">
             বাংলাদেশ রেলওয়ে
           </h1>
-          <p class="services text-gray-600 roboto-normal text-xl">
+          <p class="services text-gray-600 roboto-normal text-xl hidden sm:inline-block">
             Bangladesh Railway
           </p>
-          <p class="number roboto-bold text-[32px] mt-6">163</p>
+          <p class="number roboto-bold text-[32px] mt-2 sm:mt-6">163</p>
           <p
             class="hind-madurai-regular text-[18px] text-gray-700 bg-gray-200 w-fit px-4 py-2 rounded-full flex mb-6"
           >
             <span class="mt-1">পরিবহন</span>
           </p>
 
-          <div class="flex gap-2">
+          <div class="flex flex-col sm:flex-row gap-2">
             <button
               class="btn btn-cpy roboto-normal text-[16px] text-gray-700 rounded-lg border-2 border-gray-200 flex-grow"
             >

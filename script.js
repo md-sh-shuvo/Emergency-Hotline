@@ -21,13 +21,13 @@ document.body.addEventListener('click', (e)=>{
             let time = date.toLocaleTimeString('en-us', {hour12:true});
             div.innerHTML =  `
                 <div
-                  class="flex justify-between items-center bg-gray-100 p-4 mt-2 rounded-lg"
+                  class="sm:flex justify-between items-center bg-gray-100 p-4 mt-2 rounded-lg"
                 >
                   <div class="grid gap-1">
-                    <h1 class="hind-madurai-regular text-[18px]">
+                    <h1 class="hind-madurai-regular text-[16px] sm:text-[18px]">
                       ${serviceName.innerText}
                     </h1>
-                    <p class="hind-madurai-regular text-[18px] text-gray-600">
+                    <p class="hind-madurai-regular text-[15px] sm:text-[18px] text-gray-600">
                       ${number.innerText}
                     </p>
                   </div>
