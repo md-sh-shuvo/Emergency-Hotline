@@ -21,7 +21,7 @@ document.body.addEventListener('click', (e)=>{
             let time = date.toLocaleTimeString('en-us', {hour12:true});
             div.innerHTML =  `
                 <div
-                  class="sm:flex justify-between items-center bg-gray-100 p-4 mt-2 rounded-lg"
+                  class="sm:flex justify-between items-center bg-gray-100 p-3 sm:p-4 mt-2 rounded-lg"
                 >
                   <div class="grid gap-1">
                     <h1 class="hind-madurai-regular text-[16px] sm:text-[18px]">
@@ -51,6 +51,7 @@ document.body.addEventListener('click', (e)=>{
     if(e.target.matches('.heart')){
         count++;
         document.getElementById('fav-count').innerText = count;
+        e.target.setAtribute("fill", "red")
 
     }
 
@@ -79,4 +80,16 @@ document.getElementById('clear').addEventListener('click', ()=>{
 // document.querySelectorAll('.heart').forEach((hbtn) => {
 //     hbtn.addEventListener('click', ()=>{
 //     })
+// })
+
+// let cnt = 0
+// document.getElementById('svg').addEventListener('click', ()=>{
+//     if(cnt%2==0){
+//         document.getElementById('svg').setAttribute("fill", "red")
+//     }
+//     else{
+//         document.getElementById('svg').setAttribute("fill", "none")
+
+//     }
+//     cnt++;
 // })
